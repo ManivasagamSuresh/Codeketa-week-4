@@ -1,0 +1,33 @@
+<!-- Given a string 'S' swap the even and odd characters starting 
+    from index 1(Assume the index starts from 0). -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = ['c','o','d','e','k','a','t','a'];
+
+console.log(a);
+
+for(let i=0;i<a.length;i++)
+{
+    if(i%2==0)
+    {
+        n=a[i];
+        a.splice(i,1,a[i+1]);
+        a.splice(i+1,1,n);
+    }
+}
+console.log(a);
+let b=a.join("");
+console.log(b);
+    </script>
+</body>
+</html>
